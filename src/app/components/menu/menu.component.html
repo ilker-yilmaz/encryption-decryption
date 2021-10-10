@@ -1,0 +1,47 @@
+<body>
+    <div class="menu">
+      
+        <button id="menuEnc" class="selected">
+          <p>Encryption</p>
+        </button>
+        <button id="menuDec">
+          <p>Decryption</p>
+        </button>
+        <button id="menuSpecs">
+          <p>Specification</p>
+        </button>
+        
+    </div>
+    <div class="footer">
+        <p id="status"></p>
+    </div>
+    <div id="enc">
+        <h1>Encryption</h1>
+        <h2>ClearText</h2>
+        <textarea id="clearTextInput" placeholder="Type some text here..."></textarea>
+        
+        <br>
+        <button id="encrypt">
+          <p>Encrypt</p>
+        </button>
+        <br>
+        <h2>CipherText</h2>
+        <textarea disabled id="cipherTextOutput"></textarea>
+    </div>
+    <div id="dec">
+        <h1>Decryption</h1>
+        <h2>CipherText</h2>
+        <textarea id="cipherTextInput" placeholder="Type some text here..."></textarea>
+        <br>
+        <button id="decrypt">
+          <p>Decrypt</p>
+        </button>
+        <br>
+        <h2>ClearText</h2>
+        <textarea disabled id="clearTextOutput"></textarea>
+    </div>
+    <div id="specs">
+        <h1>Specification</h1>
+      <pre>Algoritmamızın özellikleri</pre>
+    </div>
+  </body>
