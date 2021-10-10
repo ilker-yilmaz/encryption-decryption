@@ -7,10 +7,24 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MenuComponent implements OnInit {
 
-  constructor() { }
+  constructor() { 
+    
+  }
 
   ngOnInit(): void {
+this.deneme
+let btn = document.getElementById("encrypt");
+btn?.addEventListener("click", (e:Event) => this.deneme());
+ 
+ }
+   deneme() {
+    const clearTextInput = (<HTMLInputElement>document.getElementById("clearTextInput")).value;
+
+    const myusername = (<HTMLInputElement>document.getElementById("cipherTextOutput")).value;
+    console.log(clearTextInput)
   }
+
+  
 
   /*
   
