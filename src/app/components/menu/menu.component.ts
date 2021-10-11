@@ -20,8 +20,25 @@ btn?.addEventListener("click", (e:Event) => this.deneme());
    deneme() {
     const clearTextInput = (<HTMLInputElement>document.getElementById("clearTextInput")).value;
 
-    const myusername = (<HTMLInputElement>document.getElementById("cipherTextOutput")).value;
-    console.log(clearTextInput)
+    //let ascii = clearTextInput.charCodeAt(0); // ?
+//let char = String.fromCharCode(ascii); // 'clearTextInput'
+
+//const ciphertext =  (ascii);
+
+     let cipherText: Array<number>;
+     cipherText=[]
+
+    for (let i = 0; i < clearTextInput.length; i++) {
+      var ascii = clearTextInput[i].charCodeAt(i);
+      cipherText.length++
+      console.log(ascii)
+    }
+
+    console.log(cipherText);
+
+
+    (<HTMLInputElement>document.getElementById("cipherTextOutput")).value=clearTextInput;
+    //console.log(ciphertext)
   }
 
   
